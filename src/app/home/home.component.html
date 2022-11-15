@@ -1,0 +1,19 @@
+<p>
+    {{title}}
+</p>
+<table>
+<tbody>
+
+    <tr *ngFor = 'let us of listData'>
+        <th id="textcent" style="color: white" scope="row">{{us.id}}</th>
+        <td style="color: white">{{us.name}}</td>
+        <td style="color: white">{{us.description}}</td>
+        <td id="textcent" style="color: white">{{us.price}}</td>
+        <td>
+          <button class="btn btn-sm btn-danger">Delete</button>
+          <button class="btn btn-sm btn-danger">Update</button>
+        </td>
+      </tr>
+    
+  </tbody>
+</table>
